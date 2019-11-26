@@ -10,7 +10,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,beans,env, mappings, routes
+        include: health,info,beans,env, mappings, routes, refresh
 message: Pozdrav
 server:
   port: 9992
