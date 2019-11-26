@@ -19,5 +19,6 @@ management:
 zuul:
   routes:
     mock-scientific-center:
-      path: "/**/nc**"
+      path: "/nc/**"
+      service-id: mock-scientific-center
       strip-prefix: false
