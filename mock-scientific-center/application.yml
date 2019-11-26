@@ -11,6 +11,6 @@ management:
     web:
       exposure:
         include: refresh, health,info,beans,env, mappings, routes
-message: Pozicccccccccccccccccccc
+message: Pozicc
 server:
   port: 9992
