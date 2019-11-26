@@ -14,4 +14,4 @@ management:
 server:
   port: 9992
 
-message: Zdravo
+message: Proba 
