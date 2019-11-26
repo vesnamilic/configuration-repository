@@ -18,5 +18,5 @@ zuul:
   prefix: /api
   routes:
     mock-scientific-center:
-      path: "/nc/**"
-      service-id: mock-scientific-center
+      path: "/bitcoin/**"
+      service-id: mock-bitcoin-service
