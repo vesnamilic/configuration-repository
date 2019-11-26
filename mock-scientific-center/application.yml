@@ -1,19 +1,16 @@
-server:
-  port: 9992
-
 eureka:
   client:
     enabled: true
-    registryFetchIntervalSeconds: 10 # how often to fetch the registry from Eureka server
-    instanceInfoReplicationIntervalSeconds: 10 # how often to replicate instance changes to be replicated to Eureka server
+    instance-info-replication-interval-seconds: 10
+    registry-fetch-interval-seconds: 10
   instance:
-    leaseRenewalIntervalInSeconds: 10 # intervalSeconds between subsequent heartbeats sent to Eureka server
-    leaseExpirationDurationInSeconds: 20 # time that Eureka server waits since it received last heartbeat before it can evict this instance
-
+    lease-expiration-duration-in-seconds: 20
+    lease-renewal-interval-in-seconds: 10
 management:
   endpoints:
     web:
       exposure:
-        include: ["health", "info", "refresh"]
-
-message: Dynamic Message
+        include: health,info,beans,env, mappings, routes
+message: Pozdrav
+server:
+  port: 9992
