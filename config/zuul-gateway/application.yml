@@ -22,3 +22,6 @@ zuul:
     payPal-service:
       path: "/payPal/**"
       service-id: payPal-service
+    client-service:
+      path: "/client/**"
+      service-id: client-service
