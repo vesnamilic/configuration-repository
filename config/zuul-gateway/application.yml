@@ -25,3 +25,6 @@ zuul:
     client-service:
       path: "/client/**"
       service-id: client-service
+    authentication-service:
+      path: "/authentication/**"
+      service-id: authentication-service
