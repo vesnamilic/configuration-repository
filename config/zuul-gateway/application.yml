@@ -16,9 +16,9 @@ server:
 zuul:
   prefix: /api
   routes:
-    mock-bitcoin-service:
+    bitcoin-service:
       path: "/bitcoin/**"
-      service-id: mock-bitcoin-service
+      service-id: bitcoin-service
     payPal-service:
       path: "/paypal/**"
       service-id: paypal-service
