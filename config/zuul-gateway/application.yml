@@ -11,8 +11,7 @@ management:
     web:
       exposure:
         include: refresh, health,info,beans,env, mappings, routes
-server:
-  port: 8762
+
 zuul:
   prefix: /api
   routes:
