@@ -19,8 +19,8 @@ zuul:
       path: "/bitcoin/**"
       service-id: bitcoin-service
     payPal-service:
-      path: "/payPal/**"
-      service-id: payPal-service
+      path: "/paypal/**"
+      service-id: paypal-service
     client-service:
       path: "/client/**"
       service-id: client-service
