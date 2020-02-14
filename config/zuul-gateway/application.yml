@@ -15,15 +15,23 @@ management:
 zuul:
   prefix: /api
   routes:
+    bank-service:
+      service-id: bank-service
+      path: "/bank/**"
+      sensitive-headers: Cookie,Set-Cookie
     bitcoin-service:
       path: "/bitcoin/**"
       service-id: bitcoin-service
+      sensitive-headers: Cookie,Set-Cookie
     payPal-service:
       path: "/paypal/**"
       service-id: paypal-service
+      sensitive-headers: Cookie,Set-Cookie
     client-service:
       path: "/client/**"
       service-id: client-service
-    authentication-service:
-      path: "/authentication/**"
-      service-id: authentication-service
+      sensitive-headers: Cookie,Set-Cookie
+    mock-payment-service:
+      path: "/payment/**"
+      service-id: mock-payment-service
+      sensitive-headers: Cookie,Set-Cookie
