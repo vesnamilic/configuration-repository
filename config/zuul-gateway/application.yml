@@ -15,10 +15,6 @@ management:
 zuul:
   prefix: /api
   routes:
-    bank-service:
-      service-id: bank-service
-      path: "/bank/**"
-      sensitive-headers: Cookie,Set-Cookie
     bitcoin-service:
       path: "/bitcoin/**"
       service-id: bitcoin-service
