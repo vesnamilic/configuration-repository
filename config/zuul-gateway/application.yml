@@ -1,3 +1,10 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client:
     enabled: true
@@ -31,3 +38,4 @@ zuul:
       path: "/client/**"
       service-id: client-service
       sensitive-headers: Cookie,Set-Cookie
+  
