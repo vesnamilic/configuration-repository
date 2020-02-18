@@ -61,7 +61,5 @@ spring:
         temp:
           use_jdbc_metadata_defaults: false
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
-  cloud:
-    bus:
-      enabled: true
-test: 'Globalno'
+
+
