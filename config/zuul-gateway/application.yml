@@ -19,6 +19,10 @@ zuul:
       service-id: bank-service
       path: "/bank/**"
       sensitive-headers: Cookie,Set-Cookie
+    bitcoin-service:
+      path: "/bitcoin/**"
+      service-id: bitcoin-service
+      sensitive-headers: Cookie,Set-Cookie
     payPal-service:
       path: "/paypal/**"
       service-id: paypal-service
