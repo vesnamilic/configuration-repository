@@ -46,6 +46,9 @@ management:
 
 #Spring DataSource
 spring:
+  cloud:
+    bus:
+      enabled: true
   datasource:
     url: jdbc:postgresql://localhost:5432/bitcoin-service
     username: postgres
@@ -61,5 +64,5 @@ spring:
         temp:
           use_jdbc_metadata_defaults: false
         dialect: org.hibernate.dialect.PostgreSQL95Dialect
-
-
+ 
+test: 'Lokal'
