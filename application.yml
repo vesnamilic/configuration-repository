@@ -5,4 +5,4 @@ spring:
     username: guest
     password: guest
 
-test: 'Global2'
+test: 'Global2das'
