@@ -31,7 +31,3 @@ zuul:
       path: "/bitcoin/**"
       service-id: bitcoin-service
       sensitive-headers: Cookie,Set-Cookie
-    mock-payment-service:
-      path: "/payment/**"
-      service-id: mock-payment-service
-      sensitive-headers: Cookie,Set-Cookie
